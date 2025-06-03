@@ -1,6 +1,6 @@
 ﻿namespace ART.Form
 {
-    partial class FormCounselor
+    partial class FormCounsellor
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.RdCounsellorSex = new DevExpress.XtraEditors.RadioGroup();
-            this.DaCounsellor = new DevExpress.XtraEditors.DateEdit();
             this.SplitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.DaCounsellor = new DevExpress.XtraEditors.DateEdit();
             this.LabelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtCounsellorPhone = new DevExpress.XtraEditors.TextEdit();
             this.LabelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -39,20 +39,20 @@
             this.txtCounsellorName = new DevExpress.XtraEditors.TextEdit();
             this.LabelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.CboCounsellorStatus = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.ToolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbReload = new System.Windows.Forms.ToolStripButton();
             this.ToolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tbsClear = new System.Windows.Forms.ToolStripButton();
             this.tsbSave = new System.Windows.Forms.ToolStripButton();
-            this.tsbReload = new System.Windows.Forms.ToolStripButton();
             this.ToolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.ToolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.RdCounsellorSex.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainerControl1.Panel1)).BeginInit();
             this.SplitContainerControl1.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainerControl1.Panel2)).BeginInit();
             this.SplitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCounsellorPhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCounsellorName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CboCounsellorStatus.Properties)).BeginInit();
@@ -75,20 +75,6 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "Female")});
             this.RdCounsellorSex.Size = new System.Drawing.Size(164, 29);
             this.RdCounsellorSex.TabIndex = 2;
-            // 
-            // DaCounsellor
-            // 
-            this.DaCounsellor.EditValue = "01/01/1900";
-            this.DaCounsellor.Location = new System.Drawing.Point(105, 121);
-            this.DaCounsellor.Margin = new System.Windows.Forms.Padding(2);
-            this.DaCounsellor.Name = "DaCounsellor";
-            this.DaCounsellor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DaCounsellor.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DaCounsellor.Properties.MaskSettings.Set("mask", "d");
-            this.DaCounsellor.Size = new System.Drawing.Size(164, 20);
-            this.DaCounsellor.TabIndex = 4;
             // 
             // SplitContainerControl1
             // 
@@ -117,6 +103,20 @@
             this.SplitContainerControl1.SplitterPosition = 289;
             this.SplitContainerControl1.TabIndex = 5;
             this.SplitContainerControl1.Text = "SplitContainerControl1";
+            // 
+            // DaCounsellor
+            // 
+            this.DaCounsellor.EditValue = "01/01/1900";
+            this.DaCounsellor.Location = new System.Drawing.Point(105, 121);
+            this.DaCounsellor.Margin = new System.Windows.Forms.Padding(2);
+            this.DaCounsellor.Name = "DaCounsellor";
+            this.DaCounsellor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DaCounsellor.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DaCounsellor.Properties.MaskSettings.Set("mask", "d");
+            this.DaCounsellor.Size = new System.Drawing.Size(164, 20);
+            this.DaCounsellor.TabIndex = 4;
             // 
             // LabelControl5
             // 
@@ -189,10 +189,13 @@
             this.CboCounsellorStatus.Size = new System.Drawing.Size(164, 20);
             this.CboCounsellorStatus.TabIndex = 5;
             // 
-            // ToolStripSeparator2
+            // tsbReload
             // 
-            this.ToolStripSeparator2.Name = "ToolStripSeparator2";
-            this.ToolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.tsbReload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbReload.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbReload.Name = "tsbReload";
+            this.tsbReload.Size = new System.Drawing.Size(23, 22);
+            this.tsbReload.Text = "Reload Data";
             // 
             // ToolStripButton3
             // 
@@ -219,14 +222,6 @@
             this.tsbSave.Size = new System.Drawing.Size(23, 22);
             this.tsbSave.Text = "Save";
             // 
-            // tsbReload
-            // 
-            this.tsbReload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbReload.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbReload.Name = "tsbReload";
-            this.tsbReload.Size = new System.Drawing.Size(23, 22);
-            this.tsbReload.Text = "Reload Data";
-            // 
             // ToolStrip2
             // 
             this.ToolStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -243,24 +238,29 @@
             this.ToolStrip2.TabIndex = 6;
             this.ToolStrip2.Text = "ToolStrip2";
             // 
-            // FormCounseller
+            // ToolStripSeparator2
+            // 
+            this.ToolStripSeparator2.Name = "ToolStripSeparator2";
+            this.ToolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // FormCounsellor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(298, 268);
             this.Controls.Add(this.SplitContainerControl1);
             this.Controls.Add(this.ToolStrip2);
-            this.Name = "FormCounseller";
-            this.Text = "FormCounseller";
+            this.Name = "FormCounsellor";
+            this.Text = "FormCounsellor";
             ((System.ComponentModel.ISupportInitialize)(this.RdCounsellorSex.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainerControl1.Panel1)).EndInit();
             this.SplitContainerControl1.Panel1.ResumeLayout(false);
             this.SplitContainerControl1.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainerControl1.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainerControl1)).EndInit();
             this.SplitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DaCounsellor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCounsellorPhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCounsellorName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CboCounsellorStatus.Properties)).EndInit();
@@ -274,8 +274,8 @@
         #endregion
 
         internal DevExpress.XtraEditors.RadioGroup RdCounsellorSex;
-        internal DevExpress.XtraEditors.DateEdit DaCounsellor;
         internal DevExpress.XtraEditors.SplitContainerControl SplitContainerControl1;
+        internal DevExpress.XtraEditors.DateEdit DaCounsellor;
         internal DevExpress.XtraEditors.LabelControl LabelControl5;
         internal DevExpress.XtraEditors.TextEdit txtCounsellorPhone;
         internal DevExpress.XtraEditors.LabelControl LabelControl4;
@@ -284,11 +284,11 @@
         internal DevExpress.XtraEditors.TextEdit txtCounsellorName;
         internal DevExpress.XtraEditors.LabelControl LabelControl3;
         internal DevExpress.XtraEditors.ComboBoxEdit CboCounsellorStatus;
-        internal System.Windows.Forms.ToolStripSeparator ToolStripSeparator2;
+        internal System.Windows.Forms.ToolStripButton tsbReload;
         internal System.Windows.Forms.ToolStripButton ToolStripButton3;
         internal System.Windows.Forms.ToolStripButton tbsClear;
         internal System.Windows.Forms.ToolStripButton tsbSave;
-        internal System.Windows.Forms.ToolStripButton tsbReload;
         internal System.Windows.Forms.ToolStrip ToolStrip2;
+        internal System.Windows.Forms.ToolStripSeparator ToolStripSeparator2;
     }
 }

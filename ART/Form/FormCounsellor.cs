@@ -11,11 +11,21 @@ using System.Windows.Forms;
 
 namespace ART.Form
 {
-    public partial class FormCounseller : DevExpress.XtraEditors.XtraForm
+    public partial class FormCounsellor : DevExpress.XtraEditors.XtraForm
     {
-        public FormCounseller()
+        public FormCounsellor()
         {
             InitializeComponent();
+        }
+
+        private void tbsClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbReload_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
