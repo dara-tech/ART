@@ -1,6 +1,6 @@
 ﻿namespace ART.Form
 {
-    partial class FormCounseller
+    partial class FormCounselor
     {
         /// <summary>
         /// Required designer variable.

@@ -136,11 +136,11 @@
     <Compile Include="Form\FormClinicID.Designer.cs">
       <DependentUpon>FormClinicID.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormCounseller.cs">
+    <Compile Include="Form\FormCounselor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FormCounseller.Designer.cs">
-      <DependentUpon>FormCounseller.cs</DependentUpon>
+      <DependentUpon>FormCounselor.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormDoctor.cs">
       <SubType>Form</SubType>
@@ -253,7 +253,7 @@
       <DependentUpon>FormClinicID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormCounseller.resx">
-      <DependentUpon>FormCounseller.cs</DependentUpon>
+      <DependentUpon>FormCounselor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormDoctor.resx">
       <DependentUpon>FormDoctor.cs</DependentUpon>
