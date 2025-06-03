@@ -1,0 +1,19 @@
+@"
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code and Visual Studio folders
+.vs/
+*.vsidx
+
+# Log and cache files
+*.log
+*.cache
+"@ | Out-File -Encoding UTF8 -FilePath .gitignore
